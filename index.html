@@ -73,63 +73,22 @@
     <div class="container">
       <div class="row" id="intro">
         <div class="col">
-          <h2>Cross-lingual Voice Conversion</h2>
+          <h2>Abstract</h2>
           <div>
-            <p>Voice conversion (VC) modifies the speech of one speaker (source) to make it sound as if it is spoken by
-              another speaker (target). Cross-lingual VC is a special case where source and target speakers speak
-              different languages. </p>
+            <p>  Speaker recognition is a popular topic in biometric authentication and many deep learning approaches have achieved extraordinary performances. However, it has been shown in image as well as speech applications that deep neural networks are vulnerable to adversarial examples. In this study, we aim to exploit this weakness to perform targeted adversarial attacks against the x-vector based speaker recognition system. We propose to generate inaudible adversarial perturbations for attacking speaker recognition system based on the psychoacoustic principle of frequency masking. Specifically, we constrict the perturbation under the masking threshold of original audio, instead of a common l_p distortion measures. Experiments on Aishell-1 corpus show that our approach yields up to 98.5% attack success rate to arbitrary gender speaker targets, while retaining indistinguishable attribute to listeners. Furthermore, we also achieve an effective speaker attack when applying the proposed approach to a completely irrelevant waveform, such as music.</p>
           </div>
         </div>
       </div>
       <hr>
       <div class="row" id="monolingual">
         <div class="col">
-          <h2>Monolingual PPG VC (Baseline)</h2>
+          <h2>Proposed Method</h2>
           <div>
-            <p>Phonetic PosteriorGram (PPG) is a time-versus-class vector that represents the posterior probabilities of
-              phonetic
-              classes for a specific time frame. Due to PPG's speaker-independent and languageindependent properties,
-              they have
-              been successfully applied for cross-lingual voice conversion<a class="text-success" href="#1">[1]</a>.
-              The training and conversion stages are shown as below: </p>
-            <img id="img1" src="./img/baseline.svg" class="img-fluid" style="width:100%"
+            <p> </p>
+            <img id="img1" src="./fig/framework.pdf" class="img-fluid" style="width:100%"
               alt="Monolingual PPG system framework">
             <figcaption class="figure-caption text-center">
-              Figure1. Block diagram of (a) training and (b) conversion workflows of the cross-lingual VC system with
-              monolingual PPGs.
-          </div>
-        </div>
-      </div>
-      <hr>
-      <div class="row" id="bilingual">
-        <div class="col">
-          <h2>Bilingual PPG VC (Baseline)</h2>
-          <div>
-            <p>To capture accurate phonetic information of both source and target languages, bilingual PPGs are
-              introduced to represent
-              the speaker-independent features of speech signals from different languages in the same feature space. In
-              particular, a
-              bilingual PPG is formed by stacking two monolingual PPG vectors, which are extracted from two monolingual
-              speech recognition systems.
-            </p>
-            <img id="img2" src="./img/bilingual.svg" class="img-fluid" style="width:100%"
-              alt="Bilingual PPG system framework with average modeling">
-            <figcaption class="figure-caption text-center">
-              Figure2. Block diagram of (a) training and (b) conversion workflows of the cross-lingual VC system with
-              bilingual PPGs.
-          </div>
-        </div>
-      </div>
-      <hr>
-      <div class="row" id="average">
-        <div class="col">
-          <h2>Average Modeling Approach with Bilingual PPG (Proposed)</h2>
-          <div>
-            <p>To further enhance the quality of converted speech, we proposed an average modeling approach<a
-                class="text-success" href="#2">[2]</a>, which
-              utilizes acoustic and linguistic information from many speakers in both source and target languages for
-              average model training. Additional
-              i-vectors are concatenated with bilingual PPGs to represent speaker indentities.</p>
+              Figure1: An overview of the generation of adversarial examples based on frequency masking.
           </div>
         </div>
       </div>
@@ -137,13 +96,11 @@
       <div class="row" id="result">
         <div class="col-md-12">
           <h2>Speech Samples</h2>
-          <p>The model is evaluated with speech from two database:<p>
-              <p>English: VCC2018<a class="text-success" href="#3">[3]</a>
+          <p><p>
+              <p></a>
                 <p>
-                  <p>Mandarin: The Speech synthesis-library of average model provided by Databaker(<a
-                      class="text-success"
-                      href="http://www.data-baker.com/hc_pm_en.html">http://www.data-baker.com/hc_pm_en.html)</a>.</p>
-                  <h3><small>Enable a Monolingual English Speaker to Speak Mandarin</small></h3>
+                  <p></p>
+                  <h3><small></h3>
                   <h4><small>Female &rarr; Female</small></h4>
                   <div class="big-screen">
                     <table class="table">
